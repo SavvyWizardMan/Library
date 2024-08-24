@@ -84,7 +84,7 @@ function display() {
     submitBtn.addEventListener('click', () => {
 
     for (let i of inputs) {
-        if (i.value === "") {
+        if (i.value === "" || i.value > 5000) {
             return;
         }
     }
