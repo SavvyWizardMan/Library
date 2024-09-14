@@ -88,7 +88,7 @@ myLibrary[0].display();
 submitBtn.addEventListener('click', () => {
 
     for (let i of inputs) {
-        if (i.value === "" || i.value > 5000) {
+        if (i.validity.valueMissing || i.value > 5000) {
             return;
         }
     }

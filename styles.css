@@ -15,9 +15,13 @@ input {
     padding: 16px;
 }
 
-input:focus:required {
+input:required {
     border: 2px solid red;
     outline: none;
+}
+
+input:valid {
+    border: 2px solid green;
 }
 
 h1 {
